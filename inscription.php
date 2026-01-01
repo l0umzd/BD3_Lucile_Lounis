@@ -8,7 +8,7 @@
   <h1 align = "center">Formulaire d'inscription</h1>
   <?php
     if (isset($_SESSION['pseudo']) AND $_SESSION['pseudo'] != ""){
-      die('Vous êtes déjà  connecté. <a href="index.php">Retour à l\'accueil</a>');
+      die('Vous êtes déjà  connecté. <a href="accueil.php">Retour à l\'accueil</a>');
     }
   ?>
   Veuillez remplir le formulaire suivant: <br/><br/>
@@ -20,6 +20,6 @@
     <input type="submit" value="S'inscrire">   <input type="reset" value="Effacer"><br/><br>
   </form>
 
-  <a href="index.php">Retour à la page d'accueil</a>
+  <a href="accueil.php">Retour à la page d'accueil</a>
 </body>
 </html>
