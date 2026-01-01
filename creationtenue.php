@@ -2,7 +2,30 @@
 	session_start();
 ?>
 <html>
-<head><title>Creation d'une tenue</title></head>
+<head><title>Creation d'une tenue</title>
+<style>
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.item {
+    text-align: center;
+    cursor: pointer;
+}
+
+.item img {
+    width: 100%;
+    border: 2px solid transparent;
+}
+
+.item input:checked + img {
+    border-color: #000;
+}
+
+</style>
+</head>
 <body>
 <h1 align="center">Créer une tenue</h1><br/>
 <?php
