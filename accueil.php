@@ -15,6 +15,9 @@
 		$connect = 0;
 	}
 ?>
+<a href="creationtenue.php" align="center">Créer Tenue</a>
+<a href="gallerietenues.php" align="center">Voir Tenues</a>
+<a href="top10.php" align="center">Top 10</a>
 <br/><br/>
 </body>
 </html>
