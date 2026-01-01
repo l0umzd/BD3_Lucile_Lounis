@@ -10,6 +10,6 @@
 	session_destroy();
 ?>
 Vous avez bien été déconnecté.<br/><br/>
-<a href="index.php">Retour à l'accueil</a>
+<a href="accueil.php">Retour à l'accueil</a>
 </body>
 </html>
