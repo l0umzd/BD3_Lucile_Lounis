@@ -2,7 +2,7 @@
 	session_start() ;
 ?>
 <html>
-<head><title>onnexion</title></head>
+<head><title>Connexion</title></head>
 <body>
 <h1 align="center">Connexion - 2</h1>
 <?php
@@ -29,7 +29,7 @@
 	mysqli_close($connexion);
 
 
-		echo '<br/><br/><a href="index.php">Retour à l\'index</a>';
+		echo '<br/><br/><a href="accueil.php">Retour à l\'accueil</a>';
 	}
 	else {
 		die("Vous devez indiquer un nom d'utilisateur et un mot de passe !");
