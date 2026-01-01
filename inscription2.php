@@ -28,7 +28,7 @@
 			$connexion=mysqli_connect("mysql03.univ-lyon2.fr", "php_lmazenod", "7grcLredXvjBIAXGl1fAfaKPW");
 			mysqli_select_db($connexion,"closet_db");
 
-			$req = "INSERT INTO utilisateurs (Pseudo, Email, Mdp) VALUES ('".$pseudo."', '".$mail."', '".$pass1."')";
+			$req = "INSERT INTO utilisateur (Pseudo, Email, Mdp) VALUES ('".$pseudo."', '".$mail."', '".$pass1."')";
 
 			mysqli_query($connexion, $req);
 
