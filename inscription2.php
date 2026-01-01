@@ -7,7 +7,7 @@
   <h1 align="center">Validation de l'inscription</h1>
   <?php
     if(isset($_SESION['pseudo']) AND $_SESSION['pseudo'] != ""){
-      die('Vous êtes déjà connecté. <a href="index.php">Retour à l\'accueil</a>');
+      die('Vous êtes déjà connecté. <a href="accueil.php">Retour à l\'accueil</a>');
     }
   ?>
 
@@ -35,7 +35,7 @@
 			mysqli_close($connexion);
 
 			echo 'Vous avez bien té enregisté.e avec le pseudo '.$pseudo.' et le mot de passe '.$pass1.' avec le mail '.$mail.'.';
-			echo '<br/><a href="index.php">Retour à l\'accueil</a>';
+			echo '<br/><a href="accueil.php">Retour à l\'accueil</a>';
 		}
 	}
   ?>
