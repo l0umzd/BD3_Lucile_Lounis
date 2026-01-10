@@ -1,11 +1,5 @@
 <?php
 session_start();
-
-if (!isset($_SESSION['Id_User'])) {
-    echo "Vous devez être connecté.<br>";
-    echo '<a href="connexion.php">Se connecter</a>';
-    exit;
-}
 ?>
 <html>
 <head><title>Bienvenue sur ton garde robe electronique!</title></head>
