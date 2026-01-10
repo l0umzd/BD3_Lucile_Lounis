@@ -1,7 +1,7 @@
 # BD3_Lucile_Lounis
 TODO:
 - ~Creation d'une tenue~
-- Gallerie + Notation des tenues, modification et suppression de la note (4hr)
+- Gallerie + Notation des tenues, modification et suppression de la note
 - Top 10 des tenues
 - CSS pour formatter pages
 - ~Poster une tenue + image~
