@@ -29,7 +29,7 @@
 <body>
 <h1 align="center">Créer une tenue</h1><br/>
 <?php
-$connexion=mysqli_connect("mysql03.univ-lyon2.fr", "php_lmazenod", "7grcLredXvjBIAXGl1fAfaKPW") ;
+$connexion=mysqli_connect("localhost", "root", "") ;
 mysqli_select_db($connexion,"closet_db");
 
 $req = "SELECT Id_Vet, Img_Vet FROM vetements";
