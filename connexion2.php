@@ -21,7 +21,7 @@
 			echo 'Vous êtes bien connecté';
 			$_SESSION['pseudo'] = $pseudo;
 			$enreg_utilisateur = mysqli_fetch_array($res);
-			$_SESSION['ID_User'] = $enreg_utilisateur['Id_User'];
+			$_SESSION['Id_User'] = $enreg_utilisateur['Id_User'];
 	}
 		else {
 		echo 'Pseudo ou mot de passe incorrect!';
