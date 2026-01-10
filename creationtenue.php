@@ -32,7 +32,7 @@
 $connexion=mysqli_connect("localhost", "root", "") ;
 mysqli_select_db($connexion,"closet_db");
 
-$req = "SELECT Id_Vet, Img_Vet FROM vetements";
+$req = "SELECT Id_Vet, Img_Vet FROM vetement";
 
 $res=mysqli_query($connexion, $req); 
 ?>
