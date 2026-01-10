@@ -164,18 +164,18 @@ CREATE TABLE `vetement` (
 --
 
 INSERT INTO `vetement` (`Id_Vet`, `Img_Vet`, `Id_Type`, `Id_Couleur`) VALUES
-(1, 'vet/pant1.jpeg', 4, 9),
-(2, 'vet/shirt1.jpeg', 2, 1),
-(3, 'vet/shirt2.jpeg', 2, 1),
-(4, 'vet/shirt3.jpeg', 2, 5),
-(5, 'vet/shirt4.jpeg', 1, 3),
-(6, 'vet/skirt1.jpeg', 6, 1),
-(7, 'vet/skirt2.jpeg', 6, 1),
-(8, 'vet/short1.jpeg', 5, 9),
-(9, 'vet/shoe1.jpeg', 11, 1),
-(10, 'vet/shoe2.jpeg', 11, 1),
-(11, 'vet/shoe3.jpeg', 11, 1),
-(12, 'vet/shoe4.jpeg', 11, 1);
+(1, 'vet/pant1.jpg', 4, 9),
+(2, 'vet/shirt1.jpg', 2, 1),
+(3, 'vet/shirt2.jpg', 2, 1),
+(4, 'vet/shirt3.jpg', 2, 5),
+(5, 'vet/shirt4.jpg', 1, 3),
+(6, 'vet/skirt1.jpg', 6, 1),
+(7, 'vet/skirt2.jpg', 6, 1),
+(8, 'vet/short1.jpg', 5, 9),
+(9, 'vet/shoe1.jpg', 11, 1),
+(10, 'vet/shoe2.jpg', 11, 1),
+(11, 'vet/shoe3.jpg', 11, 1),
+(12, 'vet/shoe4.jpg', 11, 1);
 
 --
 -- Indexes for dumped tables
