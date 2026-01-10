@@ -1,5 +1,8 @@
 <?php
 session_start();
+if (!isset($_SESSION['Id_User'])) {
+    die("Vous devez être connecté pour créer une tenue.");
+}
 ?>
 <html>
 <head><title>Creation d'une tenue</title></head>
@@ -16,7 +19,7 @@ if (!isset($_POST['items']) || empty($_POST['items'])) {
 $vetements = $_POST['items'];
 
 $Id_User = $_SESSION['Id_User'];
-$Titre_Tenue = $_POST['titre'];
+$Titre_Tenue = $_POST['titre'] ?? 'Ma tenue';
 $Id_Saison = $_POST['Id_Saison'] ?? 1;
 
 
