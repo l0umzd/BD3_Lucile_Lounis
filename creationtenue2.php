@@ -6,7 +6,7 @@ session_start();
 <body>
 <h1 align="center">Créer une tenue2</h1><br/>
 <?php
-$connexion=mysqli_connect("mysql03.univ-lyon2.fr", "php_lmazenod", "7grcLredXvjBIAXGl1fAfaKPW") ;
+$connexion=mysqli_connect("localhost", "root", "") ;
 mysqli_select_db($connexion,"closet_db");
 
 if (!isset($_POST['items']) || empty($_POST['items'])) {
