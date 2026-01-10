@@ -18,16 +18,27 @@ if (!isset($_POST['items']) || empty($_POST['items'])) {
 if (empty($_POST['Titre_Tenue'])) {
     die("Le titre est obligatoire.");
 }
+if (!isset($_FILES['Img_tenue']) || $_FILES['Img_tenue']['error'] != 0) {
+    die("Erreur lors de l'envoi de l'image.");
+}
+
 $vetements = $_POST['items'];
 
 $Id_User = $_SESSION['Id_User'];
 $Titre_Tenue = $_POST['Titre_Tenue'];
 $Id_Saison = $_POST['Id_Saison'] ?? 1;
 
+$Img_name = basename($_FILES['Img_tenue']['name']);
+$Img_path = "imgtenue/" . $Img_name;
 
-$req = "INSERT INTO tenue (Titre_Tenue, Img_Tenue, Id_User, Id_Saison)
-        VALUES ('$Titre_Tenue', '', $Id_User, $Id_Saison)";
+move_uploaded_file($_FILES['Img_tenue']['tmp_name'], $Img_path);
+
+$req = "
+INSERT INTO tenue (Titre_Tenue, Img_Tenue, Id_User, Id_Saison)
+VALUES ('$Titre_Tenue', '$Img_path', $Id_User, $Id_Saison)
+";
 mysqli_query($connexion, $req);
+
 
 
 $Id_Tenue = mysqli_insert_id($connexion);
@@ -38,8 +49,11 @@ foreach($vetements as $Id_Vet){
   $res2 = mysqli_query($connexion, $req2);
 }
 ?>
-<h2>Votre tenue: </h2> <?php echo htmlspecialchars($Titre_Tenue); ?>
+<h2>Votre tenue : <?php echo htmlspecialchars($Titre_Tenue); ?></h2>
 <div class="tenue">
+<h3>Image de la tenue</h3>
+<img src="<?php echo $Img_path; ?>" width="200"><br><br>
+
 <?php
 $req3 = "
 SELECT v.Img_Vet
