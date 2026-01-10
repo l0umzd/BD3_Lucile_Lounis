@@ -25,7 +25,7 @@
 			die("Les deux mots de passe doivent être identiques !");
 		}
 		else {
-			$connexion=mysqli_connect("mysql03.univ-lyon2.fr", "php_lmazenod", "7grcLredXvjBIAXGl1fAfaKPW");
+			$connexion=mysqli_connect("localhost", "root", "");
 			mysqli_select_db($connexion,"closet_db");
 
 			$req = "INSERT INTO utilisateur (Pseudo, Email, Mdp) VALUES ('".$pseudo."', '".$mail."', '".$pass1."')";
