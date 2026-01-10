@@ -44,7 +44,7 @@ foreach($vetements as $Id_Vet){
 <?php
 $req = "
 SELECT v.Img_Vet
-FROM vetements v
+FROM vetement v
 JOIN tenue_vetement tv ON v.Id_Vet = tv.Id_Vet
 WHERE tv.Id_Tenue = $Id_Tenue
 ";
