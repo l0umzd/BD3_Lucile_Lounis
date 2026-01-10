@@ -42,7 +42,7 @@ $req = "SELECT Id_Vet, Img_Vet FROM vetement";
 
 $res=mysqli_query($connexion, $req); 
 ?>
-<form method="POST" action="creationtenue2.php">
+<form method="POST" action="creationtenue2.php" enctype="multipart/form-data">
 <label>Titre de la tenue :</label><br>
     <input type="text" name="Titre_Tenue" required><br><br>
     <label>Saison :</label><br>
@@ -54,7 +54,10 @@ $res=mysqli_query($connexion, $req);
             echo '<option value="'.$s['Id_Saison'].'">'.$s['Nom_Saison'].'</option>';
         }    
         ?>
-    </select><br><br>    
+    </select><br><br> 
+    <label>Image de la tenue :</label><br>
+<input type="file" name="img_tenue" accept=".jpg,.jpeg,.png" required>
+<br><br>
     <div class="gallery">
         <?php while ($row = mysqli_fetch_assoc($res)) { ?>
             <label class="item">
