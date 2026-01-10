@@ -10,7 +10,7 @@
 		$pseudo = $_POST["pseudo"];
 		$pass = $_POST["pass"];
 		
-		$connexion=mysqli_connect("mysql03.univ-lyon2.fr", "php_lmazenod", "7grcLredXvjBIAXGl1fAfaKPW");
+		$connexion=mysqli_connect("localhost", "root", "");
 		mysqli_select_db($connexion,"closet_db");
 
 		$req='SELECT Pseudo, Id_User FROM utilisateur WHERE Pseudo="'.$pseudo.'" AND Mdp="'.$pass.'";';
