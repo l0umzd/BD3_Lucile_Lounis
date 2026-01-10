@@ -20,7 +20,7 @@ $Titre_Tenue = $_POST['titre'];
 $Id_Saison = $_POST['Id_Saison'] ?? 1;
 
 
-$sql = "INSERT INTO tenues (Titre_Tenue, Img_Tenue, Id_User, Id_Saison)
+$sql = "INSERT INTO tenue (Titre_Tenue, Img_Tenue, Id_User, Id_Saison)
         VALUES (?, '', ?, ?)";
 $stmt = mysqli_prepare($connexion, $sql);
 mysqli_stmt_bind_param($stmt, "sii", $Titre_Tenue, $Id_User, $Id_Saison);
@@ -28,7 +28,7 @@ mysqli_stmt_execute($stmt);
 
 $Id_Tenue = mysqli_insert_id($connexion);
 
-$sql_link = "INSERT INTO tenue_vetement(If_Tenue, Id_Vet) VALUES (?, ?)";
+$sql_link = "INSERT INTO tenue_vetement(Id_Tenue, Id_Vet) VALUES (?, ?)";
 $stmt_link = mysqli_prepare($connexion, $sql_link);
 
 foreach($vetements as $Id_Vet){
