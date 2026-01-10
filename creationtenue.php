@@ -56,7 +56,7 @@ $res=mysqli_query($connexion, $req);
         ?>
     </select><br><br> 
     <label>Image de la tenue :</label><br>
-<input type="file" name="img_tenue" accept=".jpg,.jpeg,.png" required>
+<input type="file" name="Img_tenue" accept=".jpg,.jpeg,.png" required>
 <br><br>
     <div class="gallery">
         <?php while ($row = mysqli_fetch_assoc($res)) { ?>
