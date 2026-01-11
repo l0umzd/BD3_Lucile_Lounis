@@ -188,9 +188,9 @@ INSERT INTO `vetement` (`Id_Vet`, `Img_Vet`, `Id_Type`, `Id_Couleur`) VALUES
 (10, 'vet/shoe2.jpg', 11, 1),
 (11, 'vet/shoe3.jpg', 11, 1),
 (12, 'vet/shoe4.jpg', 11, 1),
-(13, 'vet/pant2.jpeg', 4, 1),
-(14, 'vet/jacket1.jpeg', 9, 1),
-(15, 'vet/sweater1.jpeg', 8, 8);
+(13, 'vet/pant2.jpg', 4, 1),
+(14, 'vet/jacket1.jpg', 9, 1),
+(15, 'vet/sweater1.jpg', 8, 8);
 
 --
 -- Indexes for dumped tables
