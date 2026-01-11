@@ -53,7 +53,7 @@ while ($row = mysqli_fetch_assoc($res)){
   echo '<h4>'.htmlspecialchars($row['Titre_Tenue']).'</h4>';
   echo '<p>Par <b>'.$row['Pseudo'].'</b></p>';
   echo '<p>⭐ '.number_format($row['Moyenne'], 1).' / 10</p>';
-  echo '<p>('.$row['NbVotes']' votes)</p>';
+  echo '<p>('.$row['NbVotes'].' votes)</p>';
   echo '</div>';
   $rank++;
 }
