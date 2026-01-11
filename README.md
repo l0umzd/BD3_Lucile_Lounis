@@ -2,7 +2,7 @@
 TODO:
 - ~Creation d'une tenue~
 - Gallerie + Notation des tenues, modification et suppression de la note
-- Top 10 des tenues
+- ~Top 10 des tenues~
 - CSS pour formatter pages
 - ~Poster une tenue + image~
 
